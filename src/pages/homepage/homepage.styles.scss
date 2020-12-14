@@ -1,0 +1,17 @@
+.app-container {
+  padding: $padding-small;
+  letter-spacing: 0.1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  min-height: 90vh;
+  width: 50rem;
+  padding: 4rem;
+  border: 0.2rem solid $purple-dark;
+}
+
+.homepage {
+  background-image: url("https://res.cloudinary.com/dblakenzcloud/image/upload/v1607819389/weather/weather-01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

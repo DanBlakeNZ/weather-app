@@ -1,0 +1,20 @@
+.forecast-day {
+  padding: 1rem;
+  width: 12rem;
+  height: 12rem;
+  text-align: center;
+
+  .weather-icon {
+    width: 4rem;
+  }
+
+  .max {
+    color: $purple;
+    margin-right: 1rem;
+    font-weight: bold;
+  }
+
+  .min {
+    color: $text-gray;
+  }
+}

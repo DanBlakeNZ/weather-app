@@ -1,0 +1,51 @@
+// Global Styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+// Because 16 * .625 = 10, so now we can work with rems in a base 10 system just like pixels. eg 2.2 rems = 22px.
+
+body {
+  color: $text-black;
+  font-family: $quicksand;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  line-height: 1.25em;
+  letter-spacing: 0.1rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+// Global Classes
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.page {
+  height: 100vh;
+}

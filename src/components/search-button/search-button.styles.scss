@@ -1,0 +1,21 @@
+.search-button {
+  transition: all 0.3s ease 0s;
+  color: $purple;
+  background: none;
+
+  &:hover {
+    color: $purple-dark;
+  }
+
+  .spinner,
+  .spinner:after {
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+  }
+
+  .spinner {
+    margin: 0;
+    font-size: 2px;
+  }
+}

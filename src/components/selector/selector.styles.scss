@@ -1,0 +1,17 @@
+.selector {
+  padding: 1rem;
+  border: 0.1rem solid $purple;
+  color: $purple;
+  font-size: 1.2rem;
+
+  &.active {
+    background: $purple;
+    color: #fff;
+  }
+
+  &:hover {
+    background: $purple-dark;
+    color: #fff;
+    cursor: pointer;
+  }
+}
