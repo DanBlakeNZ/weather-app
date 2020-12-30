@@ -29,12 +29,15 @@ class Weather extends React.Component {
   };
 
   componentDidMount() {
-    navigator.geolocation.getCurrentPosition((position) => {
-      const { latitude, longitude } = position.coords;
-      locationSearch({ lattlong: `${latitude}, ${longitude}` }).then((response) => {
-        this.setForecast(response[0].woeid);
+    if (navigator.geolocation) {
+      // Users geoLocation
+      navigator.geolocation.getCurrentPosition((position) => {
+        const { latitude, longitude } = position.coords;
+        locationSearch({ lattlong: `${latitude}, ${longitude}` }).then((response) => {
+          this.setForecast(response[0].woeid);
+        });
       });
-    });
+    }
   }
 
   render() {
