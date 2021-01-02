@@ -4,8 +4,8 @@ import { locationSearch, getForecast } from "../../services/location-services";
 import Spinner from "../spinner/spinner.component";
 import CurrentConditions from "../current-conditions/current-conditions.component";
 import Forecast from "../forecast/forecast.component";
-import Search from "../../components/search/search.component";
-import Selector from "../../components/selector/selector.component";
+import Search from "../search/search.component";
+import Selector from "../selector/selector.component";
 
 class Weather extends React.Component {
   constructor(props) {
